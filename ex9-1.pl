@@ -1,8 +1,11 @@
 #!/usr/bin/env perl
 ## Copyright (C) 2019
 
-while (<>) {
-    if (/(\S)\1/) {
+my $what = "fred|barney";
+
+while(<>) {
+    if (/($what){3}/) {
         print;
     }
 }
+
